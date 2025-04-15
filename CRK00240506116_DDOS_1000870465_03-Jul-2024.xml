@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2010-2020 EMC Inc. All Rights Reserved.--><EMCLicense version="1.0">
+    <ActivationInfo>
+        <ActivationId>1000870465</ActivationId>
+        <ActivationDate>Jul 03, 2024 03:04:15 AM</ActivationDate>
+        <ActivatedBy>duong nguyen</ActivatedBy>
+        <ActivationType>ACTIVATE</ActivationType>
+        <ActivationCompany>ACTIVATED TO 1006087630 BO CONG AN 44 YET KIEU, HOAN KIEM HANOI VNM 999999</ActivationCompany>
+        <ActivationSite>ACTIVATED TO License Site Number: 557298466</ActivationSite>
+        <Issuer>EMC</Issuer>
+        <IssueDate>03-Jul-2024</IssueDate>
+    </ActivationInfo>
+    <MachineInfo>
+        <MachineName>CRK00240506116</MachineName>
+        <SoftwareIds>
+            <SoftwareId plc="DDOS"/>
+        </SoftwareIds>
+        <LockingIds>
+            <LockingId>
+                <LockingIdCode>HOSTID</LockingIdCode>
+                <LockingIdValue>CRK00240506116</LockingIdValue>
+            </LockingId>
+        </LockingIds>
+    </MachineInfo>
+    <LicenseKeys>
+        <LicenseKey version="1">
+            <FeatureCode>DD_RETENTION_LOCK_GOVERNANCE</FeatureCode>
+            <FeatureName>RETENTION-LOCK-GOVERNANCE</FeatureName>
+            <LicenseType>PERMANENT</LicenseType>
+            <CustomProperties>
+                <CustomProperty>
+                    <key>PLC</key>
+                    <value>DDOS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>PRODUCT_LINE</key>
+                    <value>Data Domain OS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>FEATURE_NAME</key>
+                    <value>RETENTION-LOCK-GOVERNANCE</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_CODE</key>
+                    <value>IA</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_NAME</key>
+                    <value>Instance per Server</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>LOCKING_ID</key>
+                    <value>CRK00240506116</value>
+                </CustomProperty>
+            </CustomProperties>
+        </LicenseKey>
+        <LicenseKey version="1">
+            <FeatureCode>DD_I_OS</FeatureCode>
+            <FeatureName>I/OS</FeatureName>
+            <LicenseType>PERMANENT</LicenseType>
+            <CustomProperties>
+                <CustomProperty>
+                    <key>PLC</key>
+                    <value>DDOS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>PRODUCT_LINE</key>
+                    <value>Data Domain OS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>FEATURE_NAME</key>
+                    <value>I/OS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_CODE</key>
+                    <value>IA</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_NAME</key>
+                    <value>Instance per Server</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>LOCKING_ID</key>
+                    <value>CRK00240506116</value>
+                </CustomProperty>
+            </CustomProperties>
+        </LicenseKey>
+        <LicenseKey version="1">
+            <FeatureCode>DD_ENCRYPTION</FeatureCode>
+            <FeatureName>ENCRYPTION</FeatureName>
+            <LicenseType>PERMANENT</LicenseType>
+            <CustomProperties>
+                <CustomProperty>
+                    <key>PLC</key>
+                    <value>DDOS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>PRODUCT_LINE</key>
+                    <value>Data Domain OS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>FEATURE_NAME</key>
+                    <value>ENCRYPTION</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_CODE</key>
+                    <value>IA</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_NAME</key>
+                    <value>Instance per Server</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>LOCKING_ID</key>
+                    <value>CRK00240506116</value>
+                </CustomProperty>
+            </CustomProperties>
+        </LicenseKey>
+        <LicenseKey version="1">
+            <FeatureCode>DD_VTL</FeatureCode>
+            <FeatureName>VTL</FeatureName>
+            <LicenseType>PERMANENT</LicenseType>
+            <CustomProperties>
+                <CustomProperty>
+                    <key>PLC</key>
+                    <value>DDOS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>PRODUCT_LINE</key>
+                    <value>Data Domain OS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>FEATURE_NAME</key>
+                    <value>VTL</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_CODE</key>
+                    <value>IA</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_NAME</key>
+                    <value>Instance per Server</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>LOCKING_ID</key>
+                    <value>CRK00240506116</value>
+                </CustomProperty>
+            </CustomProperties>
+        </LicenseKey>
+        <LicenseKey version="1">
+            <FeatureCode>DD_RETENTION_LOCK_COMPLIANCE</FeatureCode>
+            <FeatureName>RETENTION-LOCK-COMPLIANCE</FeatureName>
+            <LicenseType>PERMANENT</LicenseType>
+            <CustomProperties>
+                <CustomProperty>
+                    <key>PLC</key>
+                    <value>DDOS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>PRODUCT_LINE</key>
+                    <value>Data Domain OS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>FEATURE_NAME</key>
+                    <value>RETENTION-LOCK-COMPLIANCE</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_CODE</key>
+                    <value>IA</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_NAME</key>
+                    <value>Instance per Server</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>LOCKING_ID</key>
+                    <value>CRK00240506116</value>
+                </CustomProperty>
+            </CustomProperties>
+        </LicenseKey>
+        <LicenseKey version="1">
+            <FeatureCode>DD_CAPACITY_ACTIVE</FeatureCode>
+            <FeatureName>CAPACITY-ACTIVE</FeatureName>
+            <LicenseType>PERMANENT</LicenseType>
+            <CustomProperties>
+                <CustomProperty>
+                    <key>PLC</key>
+                    <value>DDOS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>PRODUCT_LINE</key>
+                    <value>Data Domain OS</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>FEATURE_NAME</key>
+                    <value>CAPACITY-ACTIVE</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_CODE</key>
+                    <value>CB</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>UOM_NAME</key>
+                    <value>Raw Capacity in TB</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>LOCKING_ID</key>
+                    <value>CRK00240506116</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>CAPACITY</key>
+                    <value>180</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>CAPACITY_UNIT</key>
+                    <value>TB</value>
+                </CustomProperty>
+                <CustomProperty>
+                    <key>SHELF_MODEL</key>
+                    <value>DS60</value>
+                </CustomProperty>
+            </CustomProperties>
+        </LicenseKey>
+    </LicenseKeys>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2002/06/xmldsig-filter2"><XPath xmlns="http://www.w3.org/2002/06/xmldsig-filter2" Filter="intersect">//ActivationInfo|//MachineInfo|//LicenseKeys</XPath></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IyIxSaFPal18cITk4qLG2mXRBXpoJm0ELOhjvoKCZHuikiCdNfNm/aC0PinCuJcEO7sD8kGXK8kg&#13;
+YRJjz3fggQ==</DigestValue></Reference></SignedInfo><SignatureValue>GcSKhMWFAaHs9F54U+XPwF1a49pYOViDqcjJNi/hOhu4uYhyv80tv/vIqTy5h8A2hmvTeXoC7/ht&#13;
+fYfWEdS9ydaViVYdMDXn1cbarSIL66qV93wX2bg4ukG/YDHy6Ysabf3VCILUKJCZDKx/Ip3mhV/G&#13;
+qRg7A948+8D5FFk8KXQHojSZY7ilbIwwy6CvOl1cUAlESWuhANBaEwfOP9HH6ByaIFQaLvTPAluB&#13;
+tXfiY2Uz24WFVXipwfsobofXL+LsMjeHh9XlyzEvkm/yoAz1+uuUs9WU2X38A1QD4/Q5wOjYLcKA&#13;
+vSD6tMGsf558wDcELIu7uy5GnzTixO7Ca5jB8A==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nrou2Rji7a4aFE6Bjf4+RpuiL7oFxLpFb043whp8w10fSgh75LYyGkJ9B95fSotHEOQlou5soYjV&#13;
+rOBjioXGWuVybMid7tF5lyNs3zWrXkVcIvrcmwNTIrs+chPmntu5qDP89A1vslRGzbHrBHQdzX5P&#13;
+lN5wcXVlXoU3E1LUsU4Lzk/GXX1FLCodbGDOVMN6/WNHJRaDts/tKacJuFhyuNc90fjyQkhb4buv&#13;
+P2nJDn8P14kpvkc15HNsm3/Wa+jsJUBfLeZCJOOvZbUiB7n/MSDPgNUBboUGxXacTgYZyUSzk1jR&#13;
+7qwzIrdcWq/vIgAsWBVr9DhckLagmq+Rq7xhBw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature></EMCLicense>
