@@ -1,0 +1,56 @@
+Anh GiangNT, [May 12, 2025 at 16:33]
+b lay giup t theo cac muc 1,2,3,6,7,10 nhe
+
+Anh GiangNT, [May 12, 2025 at 16:33]
+1 2 3 6 b dùng user root nhé
+
+Anh GiangNT, [May 12, 2025 at 16:33]
+cái 7 thì b chụp cái màn hình OEM ở homepage của con RA
+
+Anh GiangNT, [May 12, 2025 at 16:33]
+cái 10 thì b tải cái file sql kia, ví dụ b để nó ở tmp
+
+Anh GiangNT, [May 12, 2025 at 16:33]
+thì b su sang user oracle trên con RA 23
+
+Anh GiangNT, [May 12, 2025 at 16:33]
+sqlplus rasys/welcome1 @/tmp/ZDLRA_data_collector
+
+Anh GiangNT, [May 12, 2025 at 16:33]
+nó sẽ spool ra 1 file, b down file đó về giúp t
+
+Anh GiangNT, [May 12, 2025 at 16:33]
+Hi
+
+To know the RA current status and incidents please provide below details :
+
+1. Login with root credentials on any of zdlra compute node
+
+# echo 'ORACLE'dmidecode|egrep -i 'zdlra|exadata|oda' |head -n 1':'dmidecode -t system |grep -i serial':'rpm -qa|egrep "(exadata-binaries|oda-hw-mgmt|ra_automation)"
+
+# racli version
+
+# racli status appliance
+
+2. On first compute server, Set the respective RA DB home details prior to run below.
+
+# $ORACLE_HOME/rdbms/utl/list-zdlra-patches
+
+# cat $ORACLE_HOME/rdbms/install/zdlra/zdlra-software-id
+
+# srvctl config database
+
+# srvctl status database -d RA_DB_NAME
+
+3. On All RA DB compute nodes, set the respective RA grid home details prior to run below.
+
+# $GI_HOME/bin/crsctl stat res -t
+# $GI_HOME/bin/crsctl stat res -t -init
+
+4. Upload the output of ZDLRA System Activity script referenced in the note below:
+
+==>> Zero Data Loss Recovery Appliance System Activity Script ( Doc ID 2275176.1 )
+
+
+Thanks,
+Sasikanth
