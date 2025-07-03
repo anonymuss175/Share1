@@ -1,0 +1,47 @@
+HƯỚNG DẪN BUILD GÓI RPM CHO OPEN VSWITCH 3.0.1 TRÊN ORACLE LINUX 8
+
+Bước 1: Giải nén bộ khung rpmbuild
+----------------------------------
+Tải file openvswitch-rpmbuild-template.tar.gz về và giải nén:
+
+    tar -xvzf openvswitch-rpmbuild-template.tar.gz -C ~
+
+Bước 2: Tải mã nguồn Open vSwitch
+---------------------------------
+Tải mã nguồn Open vSwitch 3.0.1 về thư mục SOURCES:
+
+    curl https://www.openvswitch.org/releases/openvswitch-3.0.1.tar.gz -o ~/rpmbuild/SOURCES/openvswitch-3.0.1.tar.gz
+
+Bước 3: Cài đặt các gói phụ thuộc
+---------------------------------
+Chạy các lệnh sau để cài đặt các gói cần thiết:
+
+    sudo dnf groupinstall "Development Tools" -y
+    sudo dnf install epel-release -y
+    sudo dnf install python3-devel openssl-devel libcap-ng-devel \
+        selinux-policy-devel libunbound-devel kernel-devel \
+        systemd-devel autoconf automake libtool -y
+
+Bước 4: Build gói RPM
+---------------------
+Chạy lệnh sau để build:
+
+    rpmbuild -ba ~/rpmbuild/SPECS/openvswitch.spec
+
+Bước 5: Cài đặt gói RPM đã build
+--------------------------------
+Sau khi build thành công, gói RPM sẽ nằm trong thư mục:
+
+    ~/rpmbuild/RPMS/x86_64/
+
+Cài đặt bằng lệnh:
+
+    sudo dnf localinstall ~/rpmbuild/RPMS/x86_64/openvswitch-3.0.1-1*.rpm
+
+Ghi chú:
+--------
+- Đảm bảo bạn đang dùng Oracle Linux 8 hoặc tương đương (CentOS 8, RHEL 8).
+- Có thể cần bật EPEL repo để lấy đủ các gói phụ thuộc.
+- File .spec đã bao gồm cấu hình cơ bản để build và tạo systemd service cho openvswitch.
+
+Tác giả: ChatGPT & Duy Nguyen - 2025
