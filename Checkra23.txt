@@ -1,0 +1,66 @@
+Checkra23.txt
+Dear Khun @Nanputita Pamai
+
+ 
+
+On top of the request from previous mail, could you please provide more information as below krub:
+
+ 
+
+Please kindly run the following 3 queries when connected to sqlplus as the ZDLRA monitoring user (specified at discovery time):
+
+ 
+
+SELECT release_version , CASE WHEN REGEXP_COUNT(release_version, '\.', 1) <= 4 THEN release_version ELSE SUBSTR(release_version, 1, (INSTR(release_version, '.', 1, 5) - 1)) END AS base_version , zdlra_label , patch_level FROM (SELECT release_version , zdlra_version AS zdlra_label , release_version AS patch_level FROM raa_versions ORDER BY time DESC) WHERE ROWNUM = 1;
+
+ 
+
+ 
+
+SELECT * FROM raa_versions;
+
+ 
+
+ 
+
+SELECT version , label , (CASE WHEN TO_NUMBER(SUBSTR(version, (INSTR(version, '.', -1) + 1), (LENGTH(version) - INSTR(version, '.', -1) + 1))) > 100 THEN SUBSTR(version, 0, INSTR(version, '.', -1) -1) ELSE version END) base_version FROM (SELECT version , label FROM (SELECT SUBSTR(l.value, (INSTR(l.value, 'ZDLRA_') + 6), INSTR(l.value, '_LINUX.X64') - (INSTR(l.value, 'ZDLRA_') + 6)) version , SUBSTR(l.value, INSTR(l.value, 'ZDLRA_')) label FROM (SELECT value FROM rasys.config WHERE name='_build') l)); SELECT value FROM rasys.config WHERE name='_build';
+
+ 
+
+ 
+
+Also run this query against the EM repository connected to sqlplus as SYSMAN:
+
+ 
+
+SELECT target_name , property_name , property_value FROM mgmt$target_properties WHERE property_name IN ('RAVersion','RALabel','RABaseVersion') AND target_type='oracle_dblra';
+
+Hi Khun @Nanputita Pamai
+
+ 
+
+I believe the SR has been raised and resolution is being recommended.
+
+ 
+
+In addition, I got another recommendation from product management team if ABA bank can attempt the following activity and see if it can solve the issue:
+
+ 
+
+============================
+
+ 
+
+To see if the Archival Backups page can be invoked by setting the URL in the browser to the page URL:
+
+Visit Protected Databases page (where the buttons are not being shown). The URL will look like this (where zdlra_target_name is the actual target name).
+…/em/faces/ambrDrilldownMainPage?type=oracle_dblra&command=ProtectedDb&target=zdlra_target_name
+
+ 
+
+Change the URL to the following and press Enter (to try invoking the Archival Backups page):
+…/em/faces/am-br-archival-backups?type=oracle_dblra&target=zdlra_target_name
+
+ 
+
+Please let us know if the page display properly
