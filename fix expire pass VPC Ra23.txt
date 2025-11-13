@@ -1,0 +1,11 @@
+trên RA23: 
+racli alter db_user --user_name=vpc_xxxxxxx --user_type=vpc --password
+trên máy chủ database:
+cat $ORACLE_HOME/network/admin/sqlnet.ora -> Lấy đường dẫn wallet
+mkstore -wrl <đường dẫn wallet> -listCredential -> sẽ thấy thông tin alias sử dụng user vpc
+mkstore -wrl <đường dẫn wallet> -modifyCredential <alias> <vpc_user> -> enter xong nhập pass mới
+
+trên con RA23: 
+sqlplus / as sysdba
+select profile from dba_users where username like '%VPC%'; -> cái này e lấy đc profile nhé
+alter profile <profile> LIMIT PASSWORD_LIFE_TIME UNLIMITED;
